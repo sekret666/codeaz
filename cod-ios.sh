@@ -14,7 +14,7 @@ pip3 install requests
 clear
 echo $mesaj
 echo "Fayl yazılır"
-curl "https://raw.githubusercontent.com/Texnocom/Codeaz/master/dto.py" --output "codeaz.py"
+curl "https://raw.githubusercontent.com/Texnocom/Codeaz/master/cod.py" --output "codeaz.py"
 echo $mesaj
 echo "Qurulum hazırdır, İndi StringSessionu ala bilersiz"
 python3 codeaz.py
