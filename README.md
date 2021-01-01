@@ -20,7 +20,7 @@
 
 ### Heroku ilə deploy / Deploying To Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/samil/codeaz)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/texnocom/codeaz)
 
 ### Lisenziya / License
 
