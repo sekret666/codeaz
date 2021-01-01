@@ -1,13 +1,13 @@
 FROM sandy1709/catuserbot:latest
 
 #clonning repo 
-RUN git clone https://github.com/umudmmmdov1/dtouserbot.git /root/dtouserbot
+RUN git clone https://github.com/texnocom/codeaz.git /root/codeaz
 #working directory 
-WORKDIR /root/dtouserbot
+WORKDIR /root/codeaz
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
-ENV PATH="/home/dtouserbot/bin:$PATH"
+ENV PATH="/home/codeaz/bin:$PATH"
 
 CMD ["python3", "main.py"]
