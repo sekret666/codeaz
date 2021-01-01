@@ -98,7 +98,7 @@ async def sinstall(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**U S Σ R Δ T O R Plugin Mağazası**\n\n**✅ Modul uğurlar yükləndi!**\n__ℹ️ Modulun əmrləri və işlədilişi haqqında məlumat almaq üçün__ `.dto {cmdhelp}` __yazın.__')
+                return await event.edit(f'**C O D E A Z Plugin Mağazası**\n\n**✅ Modul uğurlar yükləndi!**\n__ℹ️ Modulun əmrləri və işlədilişi haqqında məlumat almaq üçün__ `.cod {cmdhelp}` __yazın.__')
             else:
                 dosyaAdi = plugin.file.name.replace('.py', '')
                 CmdHelp = userbot.cmdhelp.CmdHelp(dosyaAdi, False)
