@@ -137,7 +137,7 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    codbl = requests.get('https://raw.githubusercontent.com/Texnocom/Codeaz/master/code.json').json()
+    codbl = requests.get('https://raw.githubusercontent.com/Texnocom/Codeaz/master/codx.json').json()
     if idim in codbl:
         bot.disconnect()
 
