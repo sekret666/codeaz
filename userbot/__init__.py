@@ -356,7 +356,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"**U S Σ R Δ T O R** [Codeaz](https://t.me/Codeaz) __işləyir__\n\n**Yüklənən Modil Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** {sayfa + 1}/{veriler[0]}",
+                f"**C O D E A Z** [Codeaz](https://t.me/Codeaz) __işləyir__\n\n**Yüklənən Modil Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
