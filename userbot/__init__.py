@@ -204,7 +204,7 @@ AVTO_Q = sb(os.environ.get("AVTO_Q", "True"))
 
 # Pattərn
 PATTERNS = os.environ.get("PATTERNS", ".,")
-WHITELIST = get('https://raw.githubusercontent.com/Texnocom/Deployer/main/codwhitelist.json').json()
+WHITELIST = get('https://gitlab.com/codeaz/deployer/-/raw/master/codwhitelist.json').json()
 
 # CloudMail.ru və MEGA.nz
 if not os.path.exists('bin'):
