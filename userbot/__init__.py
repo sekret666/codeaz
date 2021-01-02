@@ -341,7 +341,7 @@ with bot:
 Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmayın, siz başqasının botunu idarə edə bilmərsiz! Altdakı GitHub adresindən bütün qurulum haqda məlumat var.""",
                     buttons=[
                         [custom.Button.url("Kanala Qatıl", "https://t.me/Codeaz"), custom.Button.url(
-                            "Qrupa Qatıl", "https://t.me/UseratorSUP")],
+                            "Qrupa Qatıl", "https://t.me/info_az")],
                         [custom.Button.url(
                             "GitHub", "https://github.com/Texnocom/Codeaz")]
                     ],
