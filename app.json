@@ -91,7 +91,7 @@
       "value": "False"
     },
     "BOT_USERNAME": {
-      "description": "Inline bot özəlliyinin işləməsi üçün lazımdır. Buraya botunuzun istifadəçi adınız yazmanız lazımdır (Məsələn: @UmudBot). Botunuz yoxdursa @BotFather köməyi ilə bot yarada bilərsiz.",
+      "description": "Inline bot özəlliyinin işləməsi üçün lazımdır. Buraya botunuzun istifadəçi adınız yazmanız lazımdır (Məsələn: @CodeazBot). Botunuz yoxdursa @BotFather köməyi ilə bot yarada bilərsiz.",
       "required": false  
     },
     "BOT_TOKEN": {
