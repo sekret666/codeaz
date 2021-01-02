@@ -306,9 +306,9 @@ with bot:
         @tgbot.on(NewMessage(pattern='/start'))
         async def start_bot_handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Salam mən ` @Codeaz`! Mən sahibimə (`@{me.username}`) kömək olmaq üçün varam, yəni sənə köməkçi ola bilmərəm :/ Ama sən da bir DTÖUserBot quraşdıra bilərsən; Kanala bax` @DTOUserBot')
+                await event.reply(f'`Salam mən ` @Codeaz`! Mən sahibimə (`@{me.username}`) kömək olmaq üçün varam, yəni sənə köməkçi ola bilmərəm :/ Ama sən da bir Codeaz quraşdıra bilərsən; Kanala bax` @DTOUserBot')
             else:
-                await event.reply(f'`U S Σ R Δ T O R`')
+                await event.reply(f'`C O D E A Z`')
 
         @tgbot.on(InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
