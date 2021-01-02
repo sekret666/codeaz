@@ -1,4 +1,4 @@
-<p align="center"><a href="https://t.me/codeaz"><img src="https://i.imgyukle.com/2021/01/01/aBJcjt.jpg" width="250"></a></p> 
+<p align="center"><a href="https://t.me/codeaz"><img src="https://i.imgyukle.com/2021/01/02/apvAtI.png" width="500"></a></p> 
 <h1 align="center"><b>Codeaz</b></h1>
 <h3 align="center">Codeaz, Telegram işlətməyinizi asandlaşdıran bir botdur. Tamamilə açıq qaynağlı və ödənişsizdir.</h3>
 <h3 align="center">Codeaz is a bot that makes it easy to use Telegram. Completely open source and free.</h3>
@@ -10,10 +10,12 @@
 <a href="https://t.me/Codeaz"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
 
-**Android üçün:** Termuxu açın bu kodu yapışdırın:** 
+**Android üçün:** 
+Termuxu açın bu kodu yapışdırın:
 `bash <(curl -L https://t.ly/CU1L)`
 
-**iOS üçün:** iSH açın bu kodu yapışdırın:** 
+**iOS üçün:** 
+iSH açın bu kodu yapışdırın:** 
 `apk update && apk add bash && apk add curl && curl -L -o cod_installer.sh 
 https://git.io/Jkr9n && chmod +x cod_installer.sh && bash cod_installer.sh`
 
