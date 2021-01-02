@@ -81,7 +81,7 @@ def MemeYap (Resim, Text, FontS = 40, Bottom = False, BottomText = None):
                 drawTextWithOutline(Bottom_Satirlar[i], x, y)
                 lastY = y
 
-    Foto.save("dtomeme.png")
+    Foto.save("codmeme.png")
 
 @register(outgoing=True, pattern="^.sangmata(?: |$)(.*)")
 async def sangmata(event):
@@ -155,23 +155,23 @@ async def memeyap(event):
             Resim = "CodSticker.png"
         elif reply.sticker and reply.file.ext == ".tgs":
             sticker = await reply.download_media()
-            os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' DtoSticker.png")
+            os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' CodSticker.png")
             os.remove(sticker)
-            Resim = "DtoSticker.png"
+            Resim = "CodSticker.png"
         elif reply.media:
             Resim = await reply.download_media()
             Sure = os.system("ffmpeg -i '"+Resim+"' 2>&1 | grep Duration | awk '{print $2}' | tr -d , | awk -F ':' '{print ($3+$2*60+$1*3600)/2}'``")
-            os.system(f"ffmpeg -i '{Resim}' -vcodec mjpeg -vframes 1 -an -f rawvideo -ss {Sure} DtoThumb.jpg")
+            os.system(f"ffmpeg -i '{Resim}' -vcodec mjpeg -vframes 1 -an -f rawvideo -ss {Sure} CodThumb.jpg")
             os.remove(Resim)
-            Resim = 'DtoThumb.jpg'
+            Resim = 'CodThumb.jpg'
         else:
             return await event.edit(LANG['REPLY_TO_MEME'])
             
-        if os.path.exists("./dtomeme.png"):
-            os.remove("./dtomeme.png")
+        if os.path.exists("./codmeme.png"):
+            os.remove("./codmeme.png")
 
         MemeYap(Resim, Text, font, Bottom, BottomText)
-        await event.client.send_file(event.chat_id, "./dtomeme.png", reply_to=reply)
+        await event.client.send_file(event.chat_id, "./codmeme.png", reply_to=reply)
         await event.delete()
         os.remove(Resim)
     else:
@@ -382,7 +382,7 @@ CmdHelp('scrapers_bot').add_command(
 ).add_command(
     'drweb', '<cavab>', 'Seçilən faylda virus olub olmadığına baxın.'
 ).add_command(
-    'meme', '<font> <üst;alt>', 'Fotoya yazı əlavə edin. İstəyirsinizsə font böyüklüyünüdə  yaza bilərsiz.', 'meme 30 dto;umud'
+    'meme', '<font> <üst;alt>', 'Fotoya yazı əlavə edin. İstəyirsinizsə font böyüklüyünüdə  yaza bilərsiz.', 'meme 30 cod;samil'
 ).add_command(
     'voicy', '<cavab>', 'Səsi yazıya çevirin.'
 ).add_command(
