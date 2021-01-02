@@ -151,8 +151,8 @@ async def memeyap(event):
 
             foto = await reply.download_media()
             im = Image.open(foto).convert("RGB")
-            im.save("DtoSticker.png", "png")
-            Resim = "DtoSticker.png"
+            im.save("CodSticker.png", "png")
+            Resim = "CodSticker.png"
         elif reply.sticker and reply.file.ext == ".tgs":
             sticker = await reply.download_media()
             os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' DtoSticker.png")
