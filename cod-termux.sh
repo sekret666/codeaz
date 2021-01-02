@@ -1,4 +1,4 @@
-MESAJ="DTÖUserBot Yükleyici"
+MESAJ="Codeaz Yükleyici"
 MESAJ+="\nTelegram: @Codeaz"
 pkg upgrade
 clear
