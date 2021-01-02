@@ -10,9 +10,11 @@
 <a href="https://t.me/Codeaz"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
 
-**Android üçün:** Termuxu açın bu kodu yapışdırın: `bash <(curl -L https://git.io/JkrSb)`
+**Android üçün:** Termuxu açın bu kodu yapışdırın: 
+`bash <(curl -L https://git.io/JkrSb)`
 
-**iOS üçün:** iSH açın bu kodu yapışdırın: `apk update && apk add bash && apk add curl && curl -L -o cod_installer.sh https://git.io/Jkr9n && chmod +x cod_installer.sh && bash cod_installer.sh`
+**iOS üçün:** iSH açın bu kodu yapışdırın: 
+`apk update && apk add bash && apk add curl && curl -L -o cod_installer.sh https://git.io/Jkr9n && chmod +x cod_installer.sh && bash cod_installer.sh`
 
 
 ### Heroku ilə deploy / Deploying To Heroku
