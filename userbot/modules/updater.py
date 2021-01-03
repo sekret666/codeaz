@@ -46,7 +46,7 @@ async def update_requirements():
         await process.communicate()
         return process.returncode
     except Exception as e:
-        return repr(e)
+        #return repr(e)
 
 
 @register(outgoing=True, pattern=r"^\.update(?: |$)(.*)")
