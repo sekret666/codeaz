@@ -26,7 +26,7 @@ async def fstat(event):
             try:
                 await conv.send_message("/start")
                 await conv.get_response()
-                await conv.send_message("/fedstat " + istifadeci + " " + dtoub)
+                await conv.send_message("/fedstat " + istifadeci + " " + codub)
                 fedstat = await conv.get_response()
                 if "file" in fedstat.text:
                     await fedstat.click(0)
@@ -42,7 +42,7 @@ async def fstat(event):
             try:
                 await conv.send_message("/start")
                 await conv.get_response()
-                await conv.send_message("/fedstat " + dtoub)
+                await conv.send_message("/fedstat " + codub)
                 fedstat = await conv.get_response()
                 if "file" in fedstat.text:
                     await fedstat.click(0)
@@ -84,7 +84,7 @@ async def info(event):
             try:
                 await conv.send_message("/start")
                 await conv.get_response()
-                await conv.send_message("/info " + dtoub)
+                await conv.send_message("/info " + codub)
                 audio = await conv.get_response()
                 await event.client.forward_messages(event.chat_id, audio)
                 await event.delete()
@@ -113,7 +113,7 @@ async def fedinfo(event):
             try:
                 await conv.send_message("/start")
                 await conv.get_response()
-                await conv.send_message("/fedinfo " + dtoub)
+                await conv.send_message("/fedinfo " + codub)
                 fedinfo = await conv.get_response()
                 await event.client.forward_messages(event.chat_id, fedinfo)
                 await event.delete()
