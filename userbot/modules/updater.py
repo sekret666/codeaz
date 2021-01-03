@@ -49,21 +49,21 @@ async def update_requirements():
         return repr(e)
 
 
-#@register(outgoing=True, pattern=r"^\.update(?: |$)(.*)")
-#async def upstream(ups):
- #   ".update əmri ilə botunun yenk versiyada olub olmadığını yoxlaya bilərsiz."
- #   await ups.edit(LANG['DETECTING'])
-#    conf = ups.pattern_match.group(1)
-#    off_repo = UPSTREAM_REPO_URL
-#    force_update = False
-
-@register(outgoing=True, pattern="^.update(?: |$)(.*)")
-@grp_exclude()
+@register(outgoing=True, pattern=r"^\.update(?: |$)(.*)")
 async def upstream(ups):
-    ".update əmri ilə botunun yenk versiyada olub olmadığını yoxlaya bilərsiz"
-    await ups.edit("Checking for updates, please wait....")
+    ".update əmri ilə botunun yenk versiyada olub olmadığını yoxlaya bilərsiz."
+    await ups.edit(LANG['DETECTING'])
     conf = ups.pattern_match.group(1)
     off_repo = 'https://github.com/Texnocom/Codeaz.git'
+    force_update = False
+
+#@register(outgoing=True, pattern="^.update(?: |$)(.*)")
+#@grp_exclude()
+#async def upstream(ups):
+   # ".update əmri ilə botunun yenk versiyada olub olmadığını yoxlaya bilərsiz"
+   # await ups.edit("Checking for updates, please wait....")
+   # conf = ups.pattern_match.group(1)
+  #  off_repo = 'https://github.com/Texnocom/Codeaz.git'
 
     try:
         txt = "`Yenilənmə uğursuz oldu! Bəzi problemlərlə qarşılaşdım.`\n\n**LOG:**\n"
